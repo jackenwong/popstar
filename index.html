@@ -1,54 +1,51 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Multi-page template</title>
+	<link rel="stylesheet" href="./_assets/css/jqm-demos.css">
+	<link rel="shortcut icon" href="./favicon.ico">
+	<script src="../_assets/js/index.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
-  <title>Cocos Creator | PopStar</title>
-
-  <!--http://www.html5rocks.com/en/mobile/mobifying/-->
-  <meta name="viewport"
-        content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1"/>
-
-  <!--https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="format-detection" content="telephone=no">
-
-  <!-- force webkit on 360 -->
-  <meta name="renderer" content="webkit"/>
-  <meta name="force-rendering" content="webkit"/>
-  <!-- force edge on IE -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-  <meta name="msapplication-tap-highlight" content="no">
-
-  <!-- force full screen on some browser -->
-  <meta name="full-screen" content="yes"/>
-  <meta name="x5-fullscreen" content="true"/>
-  <meta name="360-fullscreen" content="true"/>
-  
-  <!-- force screen orientation on some browser -->
-  <meta name="screen-orientation" content="portrait"/>
-  <meta name="x5-orientation" content="portrait">
-
-  <!--fix fireball/issues/3568 -->
-  <!--<meta name="browsermode" content="application">-->
-  <meta name="x5-page-mode" content="app">
-
-  <!--<link rel="apple-touch-icon" href=".png" />-->
-  <!--<link rel="apple-touch-icon-precomposed" href=".png" />-->
-
-  <link rel="stylesheet" type="text/css" href="style-mobile.css"/>
+	<style type="text/css">
+		.intro{
+			text-align: center;
+		}
+	</style>
 
 </head>
-<body>
-  <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="0"></canvas>
-  <div id="splash">
-    <div class="progress-bar stripes">
-      <span style="width: 0%"></span>
-    </div>
-  </div>
-<script src="src/settings.js" charset="utf-8"></script>
 
-<script src="main.js" charset="utf-8"></script>
+<body>
+
+<div data-role="page">
+
+	<div data-role="header">
+		<h1>PopStar Magic</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<div class="intro">
+			<img src="./res/intro0.jpg"/>
+		</div>
+		<div class="intro">
+				<a href="https://itunes.apple.com/app/id615879809">
+				<img src="./res/app_store.png"></img>
+				<div>Download from App Store</div>
+				</a>				
+		</div>
+		<p class="intro">To pop all Same Stars! Once you pop, you can't stop! </p>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>zyoco</h4>
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
 </body>
 </html>
