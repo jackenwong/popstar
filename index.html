@@ -1,67 +1,55 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    
+        <link rel="apple-touch-icon" href="img/logo.png">
+        <meta name="keywords" content="Classical Casual Puzzle Game."/>
+        <meta name="description" content="Classical Casual Puzzle Game." />
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="PopStar">
+        <meta property="og:description" content="Classical Casual Puzzle Game.">
+        <meta property="og:image" content="https://popstar.cc/img/logo.png">
+        <meta property="og:url" content="https://popstar.cc">
+    	<title id="title">PopStar--Classical Casual Puzzle Game.</title>            
+        <style type="text/css">
+            *{padding: 0;margin: 0;}
+            html,body {width: 100%;height: 100%;margin: 0;padding: 0;background-color:oldlace;}
+            #container{position: absolute;width: 100%; height: 100%;}
+            #app_name{margin: 10px auto;color: darkblue;}
+            #download_button{display:block; margin: 0 auto;min-width: 200px; max-width: 220px;background:rgb(161, 190, 32);color: white;font-size: larger;line-height: 50px;border-radius: 30px;cursor: pointer;white-space: nowrap; text-decoration:none;}            
+        </style>
+        
+        <script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript">if (typeof jQuery == 'undefined') {document.write(unescape('%3Cscript type="text/javascript" src="lib/jquery-1.9.1.min.js" %3E%3C/script%3E'));}</script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="header" style="text-align: center;">
+                <h1></h1>
+            </div>
+            <div id="placeholder_top" ></div>
+            <div id="content" style="opacity: 0; filter:alpha(opacity=0); text-align: center; " onclick="article_onclick();">
+                <img src="img/logo.png">
+                <h3 id="app_name">PopStar</h3>
+                <p id="app_intro" style="margin: 16px; color: darkslateblue;">The best Pop Game you ever play.</p>	
+                <a id="download_button" href="https://itunes.apple.com/app/id615879809">Download</a>            
+                <p style="margin-top: 10px;"><a id="demo_button" href="https://popstar.cc/demo/">Demo</a></p>                
+            </div>
+            <div id="placeholder_bottom" ></div>
+            <div id="footer" style="background-color: burlywood; text-align: center;">
+                <h1></h1>
+            </div>            
+        </div>
+        <a id="language_switcher" style="visibility: hidden; position: absolute; top:10px; right: 10px;" href="?lang=zh">
+            <img src="img/lang_zh.png" width="38" height="38" onclick="language_switcher_onclick();">
+        </a>        
+        <script type="text/javascript" src="index.js"></script>        
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>PopStar Magic</title>
-<!-- 	<link rel="stylesheet" href="./_assets/css/jqm-demos.css"> -->
-	<link rel="shortcut icon" href="./favicon.ico">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+	    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-29518331-10"></script>
+	    <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-29518331-10');</script>
+    </body>
 
-	<!-- <link rel="stylesheet" href="./css/themes/default/jquery.mobile-1.4.5.min.css" />
-	<script src="./js/jquery.min.js"></script>
-	<script src="./js/jquery.mobile-1.4.5.min.js"></script>
-	 -->
-	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-	<script type="text/javascript">
-	 if (typeof jQuery == 'undefined') {
-	 document.write(unescape('%3Clink rel="stylesheet" type="text/css" href="./css/themes/default/jquery.mobile-1.4.5.min.css"/%3E'));
-	 document.write(unescape('%3Cscript type="text/javascript" src="./js/jquery.min.js" %3E%3C/script%3E'));
-	 document.write(unescape('%3Cscript type="text/javascript" src="./js/jquery.mobile-1.4.5.min.js" %3E%3C/script%3E'));
-	 }
-	</script>
-
-
-	<style type="text/css">
-		.intro{
-			text-align: center;
-		}
-
-	</style>
-
-</head>
-
-<body>
-
-<div data-role="page">
-
-	<div data-role="header">
-		<h1>PopStar Magic</h1>
-	</div><!-- /header -->
-
-	<div role="main" class="ui-content">
-		<div class="intro">
-			<a href="https://itunes.apple.com/app/id615879809">
-			<img src="./res/intro0.jpg"/>
-			</a>
-		</div>
-		<div class="intro">
-			<a href="https://itunes.apple.com/app/id615879809">
-				<img class="download_button" src="./res/app_store.png"/>	
-			</a>	        
-	        <br/>
-			<a href="https://itunes.apple.com/app/id615879809">Download from App Store</a>				
-		</div>
-		<p class="intro">To pop all Same Stars! Once you pop, you can't stop! </p>
-	</div><!-- /content -->
-
-	<div data-role="footer">
-		<h4>zyoco.com</h4>
-	</div><!-- /footer -->
-
-</div><!-- /page -->
-
-</body>
 </html>

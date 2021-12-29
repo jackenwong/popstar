@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+	<link rel="apple-touch-icon" href="../images/logo.png">
+	<meta name="keywords" content="${app_intro}"/>
+	<meta name="description" content="${app_intro}" />
+	<meta property="og:type" content="website"/>
+	<meta property="og:title" content="${app_name}">
+	<meta property="og:description" content="${app_intro}">
+	<meta property="og:image" content="https://ppcandy.com/images/logo.png">
+	<meta property="og:url" content="https://ppcandy.com">
+
+	<title id="title">${title}</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-29518331-10"></script>
+	<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-29518331-10');</script>
+
+	<style type="text/css">
+		html,body {width: 100%;height: 100%;margin: 0;padding: 0;background-color:oldlace;}
+		.content {position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);}		
+		#app_name{margin: 10px auto;color: darkblue;}
+		#download_button{background:rgb(161, 190, 32);color: white;line-height: 50px;padding: 12px 30px;border-radius: 30px;cursor: pointer;white-space: nowrap; text-decoration:none;}
+		/* .button:hover{ background-color: rgb(115, 134, 31);} */
+	</style>
+</head>
+
+<body>
+	<h1 style="text-align: center; display: none;">${title}</h1>
+	<div style="height: 30%;"></div>
+	<div style="text-align: center" class="content">
+		<img src="../images/logo.png" style="max-width: 100%;">
+		<h3 id="app_name">${app_name}</h3>
+		<p id="app_intro" style="color: darkslateblue;">${app_intro}</p>	
+		<a id="download_button" href="https://itunes.apple.com/app/id593323689">${download_button}</a> 
+	</div>
+	<a style="position: absolute; top:10px; right: 10px;" href="?lang=${to_lang}">${switch_to_lang}</a>	
+</body>
+
+<script type="text/javascript">
+	window.onload = ()=>{
+		var ua = navigator.userAgent;
+		var isAndroid = ua.indexOf('Android') > -1 || ua.indexOf('Linux') > -1; //如果输出结果是true就判定是android终端或者uc浏览器
+		var isIOS = !!ua.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //根据输出结果true或者false来判断ios终端
+
+		if(isAndroid){
+			//document.getElementById("download_button").setAttribute("href", "#");
+			console.log("isAndroid");
+		}else if(isIOS){
+			console.log("isIOS");
+		}else{
+			console.log("other system!")
+		}
+	}
+</script>
+
+</html>
