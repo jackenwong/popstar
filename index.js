@@ -93,9 +93,12 @@ window.onload = function(){
 
     if(isAndroid){
         console.log("isAndroid");
+        window.location.href = "https://play.google.com/store/apps/details?id=com.zeeyogo.popstar";
     }else if(isIOS){
         console.log("isIOS");
+        window.location.href = "https://itunes.apple.com/app/id615879809";
     }else{
         console.log("other system!")
+        //window.location.href = "https://itunes.apple.com/app/id615879809";
     }
 }

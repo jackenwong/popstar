@@ -18,7 +18,7 @@
             html,body {width: 100%;height: 100%;margin: 0;padding: 0;background-color:oldlace;}
             #container{position: absolute;width: 100%; height: 100%;}
             #app_name{margin: 10px auto;color: darkblue;}
-            #download_button{display:block; margin: 0 auto;min-width: 200px; max-width: 220px;background:rgb(161, 190, 32);color: white;font-size: larger;line-height: 50px;border-radius: 30px;cursor: pointer;white-space: nowrap; text-decoration:none;}            
+            #download_button{display:block; margin: 0 auto;min-width: 200px; max-width: 220px;background:rgb(161, 190, 32);color: white;font-size: larger;line-height: 50px;border-radius: 30px;cursor: pointer;white-space: nowrap; text-decoration:none;}
         </style>
         
         <script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -34,13 +34,15 @@
                 <img src="img/logo.png">
                 <h3 id="app_name">PopStar</h3>
                 <p id="app_intro" style="margin: 16px; color: darkslateblue;">The best Pop Game you ever play.</p>	
-                <a id="download_button" href="https://itunes.apple.com/app/id615879809">Download</a>            
+                <!--<a id="download_button" href="https://itunes.apple.com/app/id615879809">Download</a>-->
+                <p><a href="https://itunes.apple.com/app/id615879809"><img src="img/download_from_appstore.png"/></a></p>                
+                <p><a href="https://play.google.com/store/apps/details?id=com.zeeyogo.popstar"><img src="img/download_from_googleplay.png"/></a></p>
                 <p style="margin-top: 10px;"><a id="demo_button" href="https://popstar.cc/demo/">Demo</a></p>                
             </div>
             <div id="placeholder_bottom" ></div>
             <div id="footer" style="background-color: burlywood; text-align: center;">
                 <h1></h1>
-            </div>            
+            </div>
         </div>
         <a id="language_switcher" style="visibility: hidden; position: absolute; top:10px; right: 10px;" href="?lang=zh">
             <img src="img/lang_zh.png" width="38" height="38" onclick="language_switcher_onclick();">
